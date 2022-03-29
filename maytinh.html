@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>MAY TINH</title>
+</head>
+<body>
+<h2><strong>Caculator</strong></h2>
+<input type="text" id="bien1">
+<input type="text" id="bien2">
+<br>
+<button id="b1" onclick="ketqua1()">Addition(+)</button>
+<button id="b2" onclick="ketqua2()">Subtraction(-)</button>
+<button id="b3" onclick="ketqua3()">Multiplication(X)</button>
+<button id="b4" onclick="ketqua4()">Divition(/)</button>
+<p id="hienthi"></p>
+</body>
+<script>
+    function ketqua1() {
+        let x=+document.getElementById("bien1").value;
+        let y=+document.getElementById("bien2").value;
+    let a=document.getElementById("b1");
+    let cong=x+y;
+    alert(cong);
+    }
+    function ketqua2() {
+        let x=+document.getElementById("bien1").value;
+        let y=+document.getElementById("bien2").value;
+        let a=document.getElementById("b2");
+        let tru=x-y;
+        alert(tru);
+    }
+    function ketqua3() {
+        let x=+document.getElementById("bien1").value;
+        let y=+document.getElementById("bien2").value;
+        let a=document.getElementById("b3");
+        let nhan=x*y;
+        alert(nhan);
+    }
+    function ketqua4() {
+        let x=+document.getElementById("bien1").value;
+        let y=+document.getElementById("bien2").value;
+        let a=document.getElementById("b4");
+        let chia=x/y;
+        alert(chia);
+    }
+</script>
+</html>

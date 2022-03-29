@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tinh so ngay</title>
+</head>
+<body>
+<input type="text" id="month">
+<input type="button" id="ok" value="Tính số ngày">
+<script>
+    let a = document.getElementById("ok");
+    a.addEventListener("click", ketqua);
+
+    function ketqua() {
+        let b = document.getElementById("month").value;
+        switch (b) {
+            case "1":
+                alert("31 ngay");
+                break;
+            case "2":
+                alert("28 hoac 29 ngay");
+                break;
+            case "3":
+                alert("31 ngay");
+                break;
+            case "4":
+                alert("30 ngay");
+                break;
+            case "5":
+                alert("31 ngay");
+                break;
+            case "6":
+                alert("30 ngay");
+                break;
+            case "7":
+                alert("31 ngay");
+                break;
+                case "8":
+                alert("31 ngay");
+                break;
+            case "9":
+                alert("30 ngay");
+                break;
+            case "10":
+                alert("31 ngay");
+                break;
+            case "11":
+                alert("30 ngay");
+                break;
+            case "12":
+                alert("31 ngay");
+                break;
+        }
+    }
+</script>
+</body>
+</html>
