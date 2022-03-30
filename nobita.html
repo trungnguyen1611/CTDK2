@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>NOBITA</title>
+</head>
+<body onload="doit()">
+<img id="nobita" src="nobita.jpg" style="position:absolute;left:0; top:0" height="100" width="80"/>
+<script>
+    function doit() {
+        window.onkeydown = move;
+    }
+    let nobi = document.getElementById("nobita");
+    function move(go) {
+        console.log(go.key);
+        switch (go.key) {
+            case "ArrowUp":
+                nobi.style.top = parseInt(nobi.style.top) - 50 + 'px';
+                break;
+            case "ArrowDown":
+                nobi.style.top = parseInt(nobi.style.top) + 50 + 'px';
+                break;
+            case "ArrowLeft":
+                nobi.style.left = parseInt(nobi.style.left) - 50 + 'px';
+                break;
+            case "ArrowRight":
+                nobi.style.left = parseInt(nobi.style.left) + 50 + 'px';
+                break;
+        }
+    }
+</script>
+</body>
+</html>
